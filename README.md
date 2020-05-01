@@ -2,8 +2,10 @@
 What is feed backward neural network?
 
 In this repository, I will explain what is feed backward neural network (NN) and how it works.
-Suppose you don't have any hidden layers, just input (x), wirghts, biases and output (Y).
-In this model, P = x . w + b and the loss function would be:
+
+
+Suppose you don't have any hidden layers, x and Y are given, and you will initialze randome weights (w) and biases (b).
+Therefore, in this model, the output becomes P = x . w + b and the loss function would be:
 <img src="https://render.githubusercontent.com/render/math?math=\textit{LOSS}= \frac{1}{2} [P - Y]^{2} = \frac{1}{2} [x . w %2B b - Y]^{2}">.
 
 We want to minimize loss of a randomly assigned weights and biases backward, i.e. <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial \textit{LOSS}}{\partial w} = x ^{t} . (P - Y)"> and <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial \textit{LOSS}}{\partial b} = P - Y">.
